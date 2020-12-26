@@ -1,8 +1,8 @@
 process.stdin.resume();
 process.stdin.setEncoding('utf8');
 
-let lines = []
-let reader = require('readline').createInterface({
+const lines = []
+const reader = require('readline').createInterface({
   input: process.stdin,
   output: process.stdout
 });
@@ -14,15 +14,15 @@ reader.on('line', (line) =>
 
 reader.on('close', () =>
 {
-  app(lines).forEach(l =>
+  app(lines).forEach(line =>
   {
-    console.log(l);
+    console.log(line);
   });
 });
 
 const app = (args) =>
 {
-  // Coding here
+  //
   return args;
 };
 
